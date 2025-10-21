@@ -9,5 +9,5 @@ export default function HomePage() {
         Setup complete - Ready for development
       </p>
     </main>
-  )
+  );
 }
