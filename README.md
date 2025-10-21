@@ -1,6 +1,6 @@
 # Hidden Galaxy
 
-> *Every codebase is a universe. Dependencies are gravitational relationships. Packages are celestial bodies.*
+> *Every codebase is a galaxy. Dependencies are gravitational relationships. Packages are celestial bodies.*
 
 **Hidden Galaxy** is a 3D interactive visualization of code dependencies as a cosmic solar system. Explore npm packages and GitHub repositories as glowing spheres floating in space, connected by light trails that reveal the invisible architecture holding software together.
 
