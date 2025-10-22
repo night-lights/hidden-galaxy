@@ -2,7 +2,7 @@
 
 import { OrbitControls } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
-import { calculateEmissiveIntensity } from '@/lib/three/luminance';
+import { calculateArtisticIntensity } from '@/lib/three/luminance';
 
 export function GalaxyScene() {
   // Generate 15 spheres in circular arrangement
@@ -42,7 +42,11 @@ export function GalaxyScene() {
           <sphereGeometry args={[0.5, 32, 32]} />
           <meshStandardMaterial
             emissive={sphere.color}
-            emissiveIntensity={calculateEmissiveIntensity(sphere.color) * 2}
+            emissiveIntensity={calculateArtisticIntensity(
+              sphere.color,
+              2.4,
+              0.55
+            )}
             color="#000000"
             toneMapped={false}
           />
