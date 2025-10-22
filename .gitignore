@@ -24,3 +24,6 @@ build/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# testing
+coverage/
