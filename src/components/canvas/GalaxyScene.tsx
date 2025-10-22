@@ -1,6 +1,7 @@
 'use client';
 
 import { OrbitControls } from '@react-three/drei';
+import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
 export function GalaxyScene() {
   // Generate 15 spheres in circular arrangement
@@ -42,9 +43,19 @@ export function GalaxyScene() {
             emissive={sphere.color}
             emissiveIntensity={2.0}
             color="#000000"
+            toneMapped={false}
           />
         </mesh>
       ))}
+
+      {/* Post-processing effects */}
+      <EffectComposer multisampling={0}>
+        <Bloom
+          luminanceThreshold={0.9}
+          luminanceSmoothing={0.9}
+          intensity={1.5}
+        />
+      </EffectComposer>
     </>
   );
 }
