@@ -51,7 +51,7 @@ export function GalaxyScene() {
       {/* Post-processing effects */}
       <EffectComposer multisampling={0}>
         <Bloom
-          luminanceThreshold={0.9}
+          luminanceThreshold={0.1}
           luminanceSmoothing={0.9}
           intensity={1.5}
         />
